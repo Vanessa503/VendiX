@@ -13,6 +13,8 @@ def populate_database():
         # Populando tabela de usuários
         with open('./data/users.csv', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
+            # Corrigir o primeiro cabeçalho com BOM (\ufeff)
+            reader.fieldnames = [header.replace('\ufeff', '').strip() for header in reader.fieldnames]
             for row in reader:
                 user = User(
                     id=int(row['id']),
