@@ -13,9 +13,8 @@ def populate_database():
         # Populando tabela de usuários
         with open('./data/users.csv', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
-            # Corrigir o primeiro cabeçalho com BOM (\ufeff)
-            reader.fieldnames = [header.replace('\ufeff', '').strip() for header in reader.fieldnames]
-            print("Cabeçalhos users.csv corrigidos:", reader.fieldnames)  # Mostra os cabeçalhos
+            reader.fieldnames = [header.replace('\ufeff', '').strip() for header in reader.fieldnames]  # Remove BOM
+            print("Cabeçalhos users.csv corrigidos:", reader.fieldnames)  # Debug
             for row in reader:
                 print("Linha lida users.csv:", row)  # Debug
                 user = User(
@@ -28,7 +27,8 @@ def populate_database():
         # Populando tabela de compras
         with open('./data/purchases.csv', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
-            print("Cabeçalhos purchases.csv corrigidos:", reader.fieldnames)  # Mostra os cabeçalhos
+            reader.fieldnames = [header.replace('\ufeff', '').strip() for header in reader.fieldnames]  # Remove BOM
+            print("Cabeçalhos purchases.csv corrigidos:", reader.fieldnames)  # Debug
             for row in reader:
                 print("Linha lida purchases.csv:", row)  # Debug
                 purchase = Purchase(
@@ -42,7 +42,8 @@ def populate_database():
         # Populando tabela de avaliações
         with open('./data/reviews.csv', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
-            print("Cabeçalhos reviews.csv corrigidos:", reader.fieldnames)  # Mostra os cabeçalhos
+            reader.fieldnames = [header.replace('\ufeff', '').strip() for header in reader.fieldnames]  # Remove BOM
+            print("Cabeçalhos reviews.csv corrigidos:", reader.fieldnames)  # Debug
             for row in reader:
                 print("Linha lida reviews.csv:", row)  # Debug
                 review = Review(
