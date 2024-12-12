@@ -15,7 +15,9 @@ def populate_database():
             reader = csv.DictReader(csvfile)
             # Corrigir o primeiro cabeçalho com BOM (\ufeff)
             reader.fieldnames = [header.replace('\ufeff', '').strip() for header in reader.fieldnames]
+            print("Cabeçalhos users.csv corrigidos:", reader.fieldnames)  # Mostra os cabeçalhos
             for row in reader:
+                print("Linha lida users.csv:", row)  # Debug
                 user = User(
                     id=int(row['id']),
                     name=row['nome'],
@@ -26,7 +28,9 @@ def populate_database():
         # Populando tabela de compras
         with open('./data/purchases.csv', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
+            print("Cabeçalhos purchases.csv corrigidos:", reader.fieldnames)  # Mostra os cabeçalhos
             for row in reader:
+                print("Linha lida purchases.csv:", row)  # Debug
                 purchase = Purchase(
                     id=int(row['id']),
                     user_id=int(row['user_id']),
@@ -38,7 +42,9 @@ def populate_database():
         # Populando tabela de avaliações
         with open('./data/reviews.csv', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
+            print("Cabeçalhos reviews.csv corrigidos:", reader.fieldnames)  # Mostra os cabeçalhos
             for row in reader:
+                print("Linha lida reviews.csv:", row)  # Debug
                 review = Review(
                     id=int(row['id']),
                     user_id=int(row['user_id']),
