@@ -1,11 +1,15 @@
 from fastapi import FastAPI, Depends
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 from .database import SessionLocal
 from .routes import users, purchases, reviews
 from . import crud
 
 app = FastAPI()
+
+# Configuração para servir arquivos estáticos
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 # Incluindo as rotas
 app.include_router(users.router, prefix="/users", tags=["users"])
