@@ -1,0 +1,11 @@
+# .gitignore
+
+# Ambiente virtual
+venv/
+
+# Arquivos de sistema
+__pycache__/
+.DS_Store
+
+# Configurações locais
+*.env
