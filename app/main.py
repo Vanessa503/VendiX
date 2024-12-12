@@ -1,6 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from fastapi.responses import HTMLResponse
+from sqlalchemy.orm import Session
+from .database import SessionLocal
 from .routes import users, purchases, reviews
+from . import crud
 
 app = FastAPI()
 
@@ -14,3 +17,18 @@ app.include_router(reviews.router, prefix="/reviews", tags=["reviews"])
 def read_dashboard():
     with open("./app/static/dashboard.html", "r") as f:
         return f.read()
+
+# Rota para fornecer dados ao dashboard
+@app.get("/dashboard-data/")
+def get_dashboard_data(db: Session = Depends(SessionLocal)):
+    total_users = len(crud.get_users(db))
+    total_purchases = len(crud.get_purchases(db))
+    total_reviews = len(crud.get_reviews(db))
+    avg_rating = sum([review.rating for review in crud.get_reviews(db)]) / total_reviews if total_reviews > 0 else 0
+
+    return {
+        "total_users": total_users,
+        "total_purchases": total_purchases,
+        "total_reviews": total_reviews,
+        "avg_rating": round(avg_rating, 2)
+    }
