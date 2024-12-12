@@ -1,13 +1,11 @@
 import csv
 from sqlalchemy.orm import Session
-from datetime import datetime
 from app.database import SessionLocal, Base, engine
 from app.models import User, Purchase, Review
 
 # Criação das tabelas no banco
 Base.metadata.create_all(bind=engine)
 
-# Função para popular o banco de dados
 def populate_database():
     db: Session = SessionLocal()
 
