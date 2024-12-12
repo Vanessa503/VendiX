@@ -1,26 +1,26 @@
 ﻿id,user_id,produto,nota,comentario,data_avaliacao
-1,1,Notebook Dell XPS,5,Excelente notebook, rápido e leve,2023-03-15 10:00:00
-2,1,Mouse Logitech MX,4,Muito bom, mas um pouco caro,2023-03-20 09:30:00
-3,2,iPhone 12,5,Smartphone incrível, câmera ótima,2023-04-10 11:00:00
-4,3,Fone de Ouvido Sony,4,Som limpo, mas poderia ser mais confortável,2023-05-18 10:00:00
-5,3,Câmera Canon EOS,5,Fotos de altíssima qualidade,2023-05-25 16:20:00
-6,4,Teclado Mecânico Redragon,4,Teclas macias, ótimo para digitar,2023-06-12 10:00:00
-7,4,Monitor LG Ultrawide,5,Tela ampla e cores vivas,2023-06-20 09:00:00
-8,5,Livro Python Avançado,5,Conteúdo muito rico para programadores,2023-07-10 08:10:00
-9,6,Samsung Galaxy S20,4,Excelente desempenho, bateria ok,2023-07-12 14:30:00
-10,7,GoPro Hero 9,5,Ótima para viagens e esportes,2023-07-20 10:00:00
-11,7,Headset Gamer HyperX,5,Som imersivo e microfone claro,2023-07-22 09:50:00
-12,8,Kindle Paperwhite,5,Perfeito para leitura diária,2023-07-25 19:10:00
-13,9,Webcam Logitech HD,4,Imagem clara, mas sem autofoco perfeito,2023-08-03 08:30:00
-14,9,Impressora HP DeskJet,3,Faz o básico, poderia ser mais rápida,2023-08-05 10:20:00
-15,10,Smart TV Samsung 50,5,Qualidade de imagem excelente,2023-08-08 11:30:00
-16,11,Xiaomi Redmi Note 9,4,Ótimo custo-benefício,2023-08-12 15:00:00
-17,12,Console Playstation 5,5,Jogos fluem com gráficos impressionantes,2023-08-18 12:30:00
-18,13,Laptop Lenovo Ideapad,4,Bom para trabalho diário,2023-08-22 14:00:00
-19,14,Tablet iPad Air,5,Versátil e rápido,2023-09-02 11:00:00
-20,15,Smartwatch Apple Watch,5,Monitoramento de saúde incrível,2023-09-06 09:10:00
-21,16,Jogo de Panelas Tramontina,4,Resistentes e bonitas,2023-09-12 15:10:00
-22,16,Mochila Dell,4,Espaçosa, bom material,2023-09-13 09:05:00
-23,17,Cadeira Ergonômica,5,Conforto excepcional,2023-09-17 10:30:00
-24,18,Monitor Samsung Curvo,5,Experiência envolvente,2023-10-02 14:00:00
-25,19,Mousepad XXL,5,Perfeito para setup gamer,2023-10-07 11:00:00
+1,1,Notebook Dell XPS,5,"Excelente notebook, rápido e leve",2023-03-15 10:00:00
+2,1,Mouse Logitech MX,4,"Muito bom, mas um pouco caro",2023-03-20 09:30:00
+3,2,iPhone 12,5,"Smartphone incrível, câmera ótima",2023-04-10 11:00:00
+4,3,Fone de Ouvido Sony,4,"Som limpo, mas poderia ser mais confortável",2023-05-18 10:00:00
+5,3,Câmera Canon EOS,5,"Fotos de altíssima qualidade",2023-05-25 16:20:00
+6,4,Teclado Mecânico Redragon,4,"Teclas macias, ótimo para digitar",2023-06-12 10:00:00
+7,4,Monitor LG Ultrawide,5,"Tela ampla e cores vivas",2023-06-20 09:00:00
+8,5,Livro Python Avançado,5,"Conteúdo muito rico para programadores",2023-07-10 08:10:00
+9,6,Samsung Galaxy S20,4,"Excelente desempenho, bateria ok",2023-07-12 14:30:00
+10,7,GoPro Hero 9,5,"Ótima para viagens e esportes",2023-07-20 10:00:00
+11,7,Headset Gamer HyperX,5,"Som imersivo e microfone claro",2023-07-22 09:50:00
+12,8,Kindle Paperwhite,5,"Perfeito para leitura diária",2023-07-25 19:10:00
+13,9,Webcam Logitech HD,4,"Imagem clara, mas sem autofoco perfeito",2023-08-03 08:30:00
+14,9,Impressora HP DeskJet,3,"Faz o básico, poderia ser mais rápida",2023-08-05 10:20:00
+15,10,Smart TV Samsung 50",5,"Qualidade de imagem excelente",2023-08-08 11:30:00
+16,11,Xiaomi Redmi Note 9,4,"Ótimo custo-benefício",2023-08-12 15:00:00
+17,12,Console Playstation 5,5,"Jogos fluem com gráficos impressionantes",2023-08-18 12:30:00
+18,13,Laptop Lenovo Ideapad,4,"Bom para trabalho diário",2023-08-22 14:00:00
+19,14,Tablet iPad Air,5,"Versátil e rápido",2023-09-02 11:00:00
+20,15,Smartwatch Apple Watch,5,"Monitoramento de saúde incrível",2023-09-06 09:10:00
+21,16,Jogo de Panelas Tramontina,4,"Resistentes e bonitas",2023-09-12 15:10:00
+22,16,Mochila Dell,4,"Espaçosa, bom material",2023-09-13 09:05:00
+23,17,Cadeira Ergonômica,5,"Conforto excepcional",2023-09-17 10:30:00
+24,18,Monitor Samsung Curvo,5,"Experiência envolvente",2023-10-02 14:00:00
+25,19,Mousepad XXL,5,"Perfeito para setup gamer",2023-10-07 11:00:00
