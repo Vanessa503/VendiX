@@ -3,17 +3,17 @@ id,user_id,produto,valor,data_compra
 2,1,Mouse Logitech MX,300.00,2023-03-10 16:45:00
 3,2,iPhone 12,4500.00,2023-04-01 10:00:00
 4,3,Fone de Ouvido Sony,700.00,2023-05-15 09:00:00
-5,3,Câmera Canon EOS,2500.00,2023-05-20 14:00:00
-6,4,Teclado Mecânico Redragon,350.00,2023-06-10 11:30:00
+5,3,CÃ¢mera Canon EOS,2500.00,2023-05-20 14:00:00
+6,4,Teclado MecÃ¢nico Redragon,350.00,2023-06-10 11:30:00
 7,4,Monitor LG Ultrawide,1200.00,2023-06-15 17:10:00
-8,5,Livro Python Avançado,150.00,2023-07-05 09:20:00
+8,5,Livro Python AvanÃ§ado,150.00,2023-07-05 09:20:00
 9,6,Samsung Galaxy S20,4200.00,2023-07-10 15:25:00
 10,7,GoPro Hero 9,2300.00,2023-07-15 16:45:00
 11,7,Headset Gamer HyperX,400.00,2023-07-18 10:00:00
 12,8,Kindle Paperwhite,600.00,2023-07-20 19:00:00
 13,9,Webcam Logitech HD,250.00,2023-08-01 08:00:00
 14,9,Impressora HP DeskJet,450.00,2023-08-02 09:30:00
-"15,10,Smart TV Samsung 50"",2700.00,2023-08-05 11:00:00"
+15,10,Smart TV Samsung 50",2700.00,2023-08-05 11:00:00
 16,11,Xiaomi Redmi Note 9,1800.00,2023-08-10 14:40:00
 17,12,Console Playstation 5,4500.00,2023-08-15 12:10:00
 18,13,Laptop Lenovo Ideapad,3400.00,2023-08-20 13:50:00
@@ -21,11 +21,11 @@ id,user_id,produto,valor,data_compra
 20,15,Smartwatch Apple Watch,2200.00,2023-09-05 14:10:00
 21,16,Jogo de Panelas Tramontina,250.00,2023-09-10 15:00:00
 22,16,Mochila Dell,200.00,2023-09-11 09:00:00
-23,17,Cadeira Ergonômica,800.00,2023-09-15 10:05:00
+23,17,Cadeira ErgonÃ´mica,800.00,2023-09-15 10:05:00
 24,18,Monitor Samsung Curvo,1100.00,2023-10-01 13:30:00
 25,19,Mousepad XXL,80.00,2023-10-05 10:15:00
 26,19,Teclado Sem Fio Logitech,200.00,2023-10-06 16:45:00
 27,20,Kindle Oasis,900.00,2023-10-10 11:20:00
-28,3,Case para Câmera Canon,100.00,2023-05-25 10:10:00
-29,2,Carregador Rápido iPhone,200.00,2023-04-05 08:30:00
+28,3,Case para CÃ¢mera Canon,100.00,2023-05-25 10:10:00
+29,2,Carregador RÃ¡pido iPhone,200.00,2023-04-05 08:30:00
 30,5,Mouse Pad RGB,120.00,2023-07-08 10:50:00
