@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
+from datetime import datetime
 from .database import Base
 
 class User(Base):
@@ -8,6 +9,7 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     email = Column(String, unique=True, index=True)
+    creation_date = Column(DateTime, default=datetime.utcnow)  # Adiciona a coluna data_criacao
 
     purchases = relationship("Purchase", back_populates="user")
     reviews = relationship("Review", back_populates="user")
@@ -19,6 +21,7 @@ class Purchase(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     product_name = Column(String, index=True)
     price = Column(Float)
+    purchase_date = Column(DateTime, default=datetime.utcnow)  # Adiciona a coluna data_compra
 
     user = relationship("User", back_populates="purchases")
 
@@ -30,5 +33,6 @@ class Review(Base):
     product_name = Column(String)
     rating = Column(Float)
     comment = Column(String)
+    review_date = Column(DateTime, default=datetime.utcnow)  # Adiciona a coluna data_avaliacao
 
     user = relationship("User", back_populates="reviews")

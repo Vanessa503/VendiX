@@ -1,4 +1,5 @@
 import csv
+from datetime import datetime
 from sqlalchemy.orm import Session
 from app.database import SessionLocal, Base, engine
 from app.models import User, Purchase, Review
@@ -21,6 +22,7 @@ def populate_database():
                     id=int(row['id']),
                     name=row['nome'],
                     email=row['email'],
+                    creation_date=datetime.strptime(row['data_criacao'], '%Y-%m-%d %H:%M:%S')  # Popula data_criacao
                 )
                 db.add(user)
 
@@ -36,6 +38,7 @@ def populate_database():
                     user_id=int(row['user_id']),
                     product_name=row['produto'],
                     price=float(row['valor']),
+                    purchase_date=datetime.strptime(row['data_compra'], '%Y-%m-%d %H:%M:%S')  # Popula data_compra
                 )
                 db.add(purchase)
 
@@ -52,6 +55,7 @@ def populate_database():
                     product_name=row['produto'],
                     rating=float(row['nota']),
                     comment=row['comentario'],
+                    review_date=datetime.strptime(row['data_avaliacao'], '%Y-%m-%d %H:%M:%S')  # Popula data_avaliacao
                 )
                 db.add(review)
 
